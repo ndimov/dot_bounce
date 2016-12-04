@@ -91,10 +91,9 @@ while 1:
 			if y<=dotSize: data[3]=abs(sy)
 			if y>=height-dotSize: data[3]=-abs(sy)	
 	
-	pygame.display.flip()
-	
 	font = pygame.font.SysFont("freesansbold.ttf", 25)
 	text = font.render("ESC to quit. SPACE to toggle line draw. ALT to toggle web. X to toggle multicolor web. P to pause.",1,white)
 	textpos = text.get_rect()
 	screen.blit(text, textpos)
+	pygame.display.flip()
 	pygame.time.Clock().tick(60)
